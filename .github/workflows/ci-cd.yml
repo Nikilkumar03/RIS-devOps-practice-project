@@ -24,6 +24,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ./Dockerfile
-          push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ris-devops-app:latest
+          file: ./pipeline-practice/Dockerfile \
+          tags: ${{ secrets.DOCKER_USERNAME }}/ris-devops-app:latest\
+          push: ./pipeline-practice
